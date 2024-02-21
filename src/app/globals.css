@@ -12,18 +12,56 @@
   --secondary: #0088ff;
   --text: #44546f;
   --url: #0047ff;
+  --h1: 2rem;
 }
 .header {
   background-color: var(--primary);
 }
 
-button {
+.button {
   background-color: var(--secondary);
   border-radius: 5px;
   padding: 5px 20px 5px 20px;
   color: var(--primary);
   font-weight: bold;
 }
-button:hover {
+.button:hover {
   background-color: var(--url);
+}
+
+.overlay {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 89vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.modal {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+h1 {
+  font-size: var(--h1);
+  font-weight: 800;
+  color: var(--text);
+}
+
+.authinput {
+  padding-left: 10px;
+  height: 2.5rem;
+  border-style: solid;
+  border-color: var(--text);
+  border-width: 2px;
+  border-radius: 0.5rem;
 }

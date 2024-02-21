@@ -1,10 +1,11 @@
 import Image from "next/image";
-import HeaderUnAuth from "./__Components/HeaderUnAuth";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <HeaderUnAuth />
+      <a href="/getstarted">Get Start</a>
     </main>
   );
 }
+
+// Home.useClient;
